@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação do Histórico Escolar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="validation-container">
+        <div class="validation-box">
+            <h2>Histórico Escolar Validado</h2>
+            <div class="validation-info">
+                <p><strong>Nome:</strong> Stéfany Loureno Ferreira</p>
+                <p><strong>Matrícula:</strong> 125111351921</p>
+                <p><strong>Data:</strong> 19/02/2025 às 10:34</p>
+            </div>
+            <button class="download-button" onclick="downloadPDF()">Baixar Histórico</button>
+        </div>
+    </div>
+
+    <script>
+        function downloadPDF() {
+            window.location.href = "historico.pdf"; // Substitua pelo caminho correto do PDF
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação do Histórico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="infoAluno">
+        <h1>Dados do Aluno</h1>
+        <p><strong>Nome:</strong> Stefany Loureno Ferreira</p>
+        <p><strong>RA:</strong> 12511135192</p>
+        <p><strong>Data de Validação:</strong> 19/02/2025 às 10:34</p>
+        <a id="download" href="historico.pdf" download>
+            <button>Baixar Histórico</button>
+        </a>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const codigoRecebido = urlParams.get("codigo");
+        const codigoCorreto = "12511135192";
+
+        if (codigoRecebido !== codigoCorreto) {
+            document.getElementById("infoAluno").innerHTML = "<h1>Código inválido ou inexistente</h1>";
+        }
+    </script>
+</body>
+</html>

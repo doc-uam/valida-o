@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+}
+
+.left-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.left-section h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.left-section p {
+    font-size: 14px;
+    color: #333;
+}
+
+.right-section {
+    flex: 1;
+    background: #e6e8ff; /* Cor de fundo parecida com a da imagem */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.right-section h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    position: relative;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #333;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #00332b;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+
+/* Estilização da segunda página */
+.validation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.validation-box {
+    background: #e0e0e0; /* Cinza claro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.validation-info {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.download-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.download-button:hover {
+    background-color: #00332b;
+}
